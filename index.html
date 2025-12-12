@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>User Management</h1>
+
+<table id="userTable">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Fullname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody id="user-body"></tbody>
+</table>
+
+<br>
+<button id="openDialogBtn">+ Add User</button>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+
+    <h3>New User</h3>
+
+    <form id="userForm">
+      <label>Username</label>
+      <input type="text" id="username" required>
+
+      <label>Fullname</label>
+      <input type="text" id="fullname" required>
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
